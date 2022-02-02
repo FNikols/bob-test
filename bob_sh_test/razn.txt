@@ -1,0 +1,7 @@
+2a3,4
+> ### Вариант 2
+> 
+4c6
+<     cd /var/www/client.web/srv/ || echo "Не могу перейти в каталог /var/www/client.web/srv/"
+---
+>     cd /var/www/client.web/srv/ || echo "Не могу перейти в каталог"

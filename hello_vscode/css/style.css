@@ -1,0 +1,12 @@
+@import url(./_header.scss);
+h1 {
+  color: rgb(109, 93, 202);
+}
+
+body {
+  font-size: 20px;
+}
+
+body div {
+  font-size: 10px;
+}
