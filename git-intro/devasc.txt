@@ -1,9 +1,3 @@
 to DEVASC exam
-
-
-Это на ветке master
-
-
-
-
-
+то на ветке master
+на ветке feature
