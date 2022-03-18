@@ -3,23 +3,21 @@
 # GitHub Action Part-1
 # ==================================
 name: My-GitHubAction-Basics
-
+env: 
+  APPLICATION_NAME:"My_F"
+  PACKEGE_NAME    :"my_foo"
+  
 on:
   push:
-    branches: 
-      - master
-      
-  jobs:
-    my_testing:
-      runs-on: ubuntu-latest
-      
+    branches: [master]
+jobs:
+   my_testing:
+     runs-on: ubuntu-latest
       steps:
-      - name: Print Message Testing
-        run: echo Hello, world from Testing
-                
-    my_deploy:
-      runs-on: ubuntu-latest
-      
-      steps:
-        - name: Print Message Deploy
-          run: echo Hello, world from Deploy
+       name: Print Message Testing
+       run: echo Hello, world from Testing
+   my_deploy:
+     runs-on: ubuntu-latest
+       steps:
+       name: Print Message Deploy
+       run: echo Hello, world from Deploy
