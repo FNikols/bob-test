@@ -2,7 +2,7 @@
 # ==================================
 # GitHub Action Part-1
 # ==================================
-name: master
+name: CI
 
 # Controls when the workflow will run
 on:
