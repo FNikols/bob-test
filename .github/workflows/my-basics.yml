@@ -2,7 +2,7 @@
 # ==================================
 # GitHub Action Part-1
 # ==================================
-name: My-GitHubActions-basics
+name: master
 
 # Controls when the workflow will run
 on:
