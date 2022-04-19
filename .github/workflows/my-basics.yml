@@ -17,7 +17,7 @@ jobs:
     steps:
     - name: Print Message Testing
       run: echo Hello, world from Testing
-      
+
     - name: Git clone my repo
       uses: actions/checkout@v1
 
@@ -36,3 +36,9 @@ jobs:
     steps:
     - name: Print Message Deploy
       run: echo Hello, world from Deploy
+
+    - name: Проверка наличия пакетов
+      run: |
+        aws -v
+        zip
+
