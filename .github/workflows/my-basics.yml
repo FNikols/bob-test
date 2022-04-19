@@ -17,19 +17,19 @@ jobs:
     steps:
     - name: Print Message Testing
       run: echo Hello, world from Testing
+      
     - name: Git clone my repo
-      uses: actions/@v1
+      uses: actions/checkout@v1
+
     - name: Выполнение нескольких команд
       run: |
         echo "================================="
         echo Несколько команд друг за другом
         cat /etc/*release
         echo "================================="
-        ip a
-        echo "================================="
         ls -la
         echo "================================="
-        
+
   my_deploy:
     needs: [my_testing]
     runs-on: ubuntu-latest
