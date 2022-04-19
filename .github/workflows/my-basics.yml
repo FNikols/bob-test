@@ -39,6 +39,6 @@ jobs:
 
     - name: Проверка наличия пакетов
       run: |
-        aws -v
-        zip
+        aws
+        zip -v
 
