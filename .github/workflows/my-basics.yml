@@ -18,7 +18,7 @@ jobs:
     - name: Print Message Testing
       run: echo Hello, world from Testing
   my_deploy:
-  needs: [my_testing]
+    needs: [my_testing]
     runs-on: ubuntu-latest
     steps:
     - name: Print Message Deploy
