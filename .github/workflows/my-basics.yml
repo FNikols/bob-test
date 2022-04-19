@@ -5,7 +5,7 @@
 name: My-GitHubAction-Basics
 
 env: 
-  APPLICATION_NAME    : "My_F"
+  APPLICATION_NAME    : "My_File"
   DEPLOY_PACKAGE_NAME : "my_foo-${{ github.sha }}"
 
 on:
@@ -13,7 +13,7 @@ on:
     branches: [master]
 jobs:
   my_testing:
-    runs-on: ubuntu-latestXXXXXXXXXXXXX
+    runs-on: ubuntu-latestZZZ
     steps:
     - name: Print Message Testing
       run: echo Hello, world from Testing
