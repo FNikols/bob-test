@@ -3,9 +3,10 @@
 # GitHub Action Part-1
 # ==================================
 name: My-GitHubAction-Basics
-env: 
-  APPLICATION_NAME:"My_F"
-  PACKEGE_NAME    :"my_foo"
+
+# env: 
+#   APPLICATION_NAME:"My_F"
+#   PACKAGE_NAME    :"my_foo"
   
 on:
   push:
@@ -13,11 +14,11 @@ on:
 jobs:
   my_testing:
     runs-on: ubuntu-latest
-      steps:
-        name: "Print Message Testing"
-        run: "echo Hello, world from Testing"
+    steps:
+    - name: Print Message Testing
+    - run: echo Hello, world from Testing
   my_deploy:
     runs-on: ubuntu-latest
-      steps:
-        name: "Print Message Deploy"
-        run: "echo Hello, world from Deploy"
+    steps:
+    - name: Print Message Deploy
+    - run: echo Hello, world from Deploy
