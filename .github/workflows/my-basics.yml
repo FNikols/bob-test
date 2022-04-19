@@ -16,9 +16,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Print Message Testing
-    - run: echo Hello, world from Testing
+      run: echo Hello, world from Testing
   my_deploy:
     runs-on: ubuntu-latest
     steps:
     - name: Print Message Deploy
-    - run: echo Hello, world from Deploy
+      run: echo Hello, world from Deploy
