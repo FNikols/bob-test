@@ -13,7 +13,7 @@ on:
     branches: [master]
 jobs:
   my_testing:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latestXXXXXXXXXXXXX
     steps:
     - name: Print Message Testing
       run: echo Hello, world from Testing
@@ -41,7 +41,6 @@ jobs:
 
     - name: Проверка наличия пакетов
       run: |
-        zip --version
         aws --version
         echo "================================="
         echo "Var1 = ${{ env.VAR1 }}"
