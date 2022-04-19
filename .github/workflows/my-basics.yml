@@ -4,10 +4,10 @@
 # ==================================
 name: My-GitHubAction-Basics
 
-# env: 
-#   APPLICATION_NAME:"My_F"
-#   PACKAGE_NAME    :"my_foo"
-  
+env: 
+  APPLICATION_NAME    : "My_F"
+  DEPLOY_PACKAGE_NAME : "my_foo-${{ github.sha }}"
+
 on:
   push:
     branches: [master]
@@ -18,6 +18,7 @@ jobs:
     - name: Print Message Testing
       run: echo Hello, world from Testing
   my_deploy:
+  needs: [my_testing]
     runs-on: ubuntu-latest
     steps:
     - name: Print Message Deploy
