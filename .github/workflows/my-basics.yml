@@ -17,6 +17,15 @@ jobs:
     steps:
     - name: Print Message Testing
       run: echo Hello, world from Testing
+    - name: Выполнение нескольких команд
+      run: |
+        echo "================================="
+        echo Несколько команд друг за другом
+        cat /etc/*release
+        echo "================================="
+        ip a
+        echo "================================="
+
   my_deploy:
     needs: [my_testing]
     runs-on: ubuntu-latest
