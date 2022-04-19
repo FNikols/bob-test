@@ -17,6 +17,8 @@ jobs:
     steps:
     - name: Print Message Testing
       run: echo Hello, world from Testing
+    - name: Git clone my repo
+      uses: actions/@v1
     - name: Выполнение нескольких команд
       run: |
         echo "================================="
@@ -25,7 +27,9 @@ jobs:
         echo "================================="
         ip a
         echo "================================="
-
+        ls -la
+        echo "================================="
+        
   my_deploy:
     needs: [my_testing]
     runs-on: ubuntu-latest
